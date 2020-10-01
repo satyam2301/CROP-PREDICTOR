@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import pyttsx3 
 from sklearn.model_selection import train_test_split
 
@@ -65,10 +66,10 @@ for i in range(0,30):
     i=i+1
 
 if(count==0):
-    engine.say("thankyou very much sir , on your screen is the best crop that i suggest for your field after perfect research , happy farming from my side sir")
+    engine.say("thankyou very much sir , on your screen is the best crop that i suggest for your field after perfect research , happy farming from my side sir \n")
     engine.runAndWait()
     print('The predicted crop is %s'%cr)
 else:
-    engine.say("thankyou very much sir , on your screen is the best crop that i suggest for your field after perfect research ,  happy farming from my side sir")
+    engine.say("thankyou very much sir , on your screen is the best crop that i suggest for your field after perfect research ,  happy farming from my side sir \n")
     engine.runAndWait()
-    print('The predicted crop is %s'%c)
+    print('The predicted crop is %s '%c)
